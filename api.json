@@ -1,0 +1,39 @@
+[{
+    "purpose":"create",
+    "method": "post",
+    "url": "localhost:8000/v1/api/minion",
+    "body" :{
+        "name": "anik",
+        "age": "20",
+        "color": "red"
+    }
+},{
+    "purpose":"get",
+    "method": "get",
+    "url": "localhost:8000/v1/api/minion",
+    "body": {},
+    "query_params":{
+        "page": "1",
+        "limit": "1",
+        "for": "pagination"
+    }
+},{
+    "purpose":"update",
+    "method": "patch",
+    "url": "localhost:8000/v1/api/minion/636bfc9af7ddaa22f57930de",
+    "body" :{
+        "name": "anik",
+        "age": "20",
+        "color": "red"
+    },
+    "params": "_id"
+},{
+
+    "purpose":"Delete",
+    "method": "delete",
+    "url": "localhost:8000/v1/api/minion/636bfc9af7ddaa22f57930de",
+    "body" :{},
+    "params": "_id"
+}
+]
+
